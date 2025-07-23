@@ -7,8 +7,6 @@ CORS(app)
 clf = Classifier()
 clf.retrain("train.csv")
 
-
-
 @app.route('/predict', methods=['POST'])
 def predict():
     data = request.json
